@@ -53,11 +53,12 @@ class NewNoteForm extends Component {
             content: this.state.content,
         }
         axios
-            .post('http://localhost:8000/view-note', note)
+            .post('http://localhost:8000/new-note', note)
             .then(res => {
-                this.setState({ title: '', content: '' })
+                console.log('The note has been created')
             })
             .catch(err => console.log(err))
+        this.setState({ title: '', content: '' })
     }
 
     render() {

@@ -35,7 +35,6 @@ class Notes extends Component {
         axios
             .get('http://localhost:8000/notes', reqOptions)
             .then(res => {
-                console.log(res);
                 this.setState({ notes: res.data})
             })
             .catch(err => {
