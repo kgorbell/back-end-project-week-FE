@@ -5,6 +5,8 @@ import styled from 'styled-components';
 
 import Sidebar from './Components/Sidebar';
 import Notes from './Components/Notes';
+import NoteView from './Components/NoteView';
+import NewNoteForm from './Components/NewNote';
 
 
 const Container = styled.div`
@@ -37,6 +39,8 @@ class App extends Component {
                     <Sidebar />
                     <MainContent>
                         <Route path='/notes' component={Notes} />
+                        <Route path='/view-note' component={NoteView} />
+                        <Route path='/new-note' component={NewNoteForm} />
                     </MainContent>
                 </AppContent>
             </Container>
