@@ -7,6 +7,7 @@ import Sidebar from './Components/Sidebar';
 import Notes from './Components/Notes';
 import NoteView from './Components/NoteView';
 import NewNoteForm from './Components/NewNote';
+import UpdateNote from './Components/UpdateNote';
 
 
 const Container = styled.div`
@@ -41,6 +42,7 @@ class App extends Component {
                         <Route path='/notes' component={Notes} />
                         <Route path='/view-note' component={NoteView} />
                         <Route path='/new-note' component={NewNoteForm} />
+                        <Route path='/update-note' component={UpdateNote} />
                     </MainContent>
                 </AppContent>
             </Container>
