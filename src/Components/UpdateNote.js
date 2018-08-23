@@ -52,9 +52,10 @@ class UpdateNote extends Component {
         const note = {
             title: this.state.title,
             content: this.state.content,
+            id: this.props.location.state.id
         }
         axios
-            .put('http://localhost:8000/update-note', note)
+            .put(`http://localhost:8000/update-note/${note.id}`, note)
             .then( res => {
                 console.log('The note has been updated')
             })
