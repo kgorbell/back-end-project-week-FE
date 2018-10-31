@@ -23,7 +23,7 @@ const Title = styled.input`
     padding-left: 15px;
 `;
 
-const Content = styled.input`
+const Content = styled.textarea`
     width: 100%;
     height: 500px;
     border-radius: 2px;
@@ -70,14 +70,14 @@ class UpdateNote extends Component {
                 <Header>Edit Note:</Header>
                 <Title
                     type='text'
-                    placeholder='Note Title'
+                    placeholder={this.props.location.state.title}
                     name='title'
                     value={this.state.title}
                     onChange={this.updateInputChange}
                 />
                 <Content 
                     type='text'
-                    placeholder='Note Content'
+                    placeholder={this.props.location.state.content}
                     name='content'
                     value={this.state.content}
                     onChange={this.updateInputChange}

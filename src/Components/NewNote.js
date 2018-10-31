@@ -23,7 +23,7 @@ const Title = styled.input`
     padding-left: 15px;
 `;
 
-const Content = styled.input`
+const Content = styled.textarea`
     width: 100%;
     height: 500px;
     border-radius: 2px;
@@ -31,6 +31,7 @@ const Content = styled.input`
     padding-top: 15px
     line-height: 20px
     margin-bottom: 10px;
+    
 `;
 
 
